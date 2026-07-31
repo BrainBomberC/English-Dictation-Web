@@ -1,0 +1,27 @@
+You are reviewing a disputed English sentence boundary.
+
+You receive a local ordered token sequence and one or more candidate
+boundaries.
+
+Decide the correct sentence-ending word IDs.
+
+Do not rewrite any words.
+
+Remove a candidate boundary if the preceding text is grammatically or
+semantically incomplete.
+
+Move a candidate boundary only to another supplied word ID.
+
+Preserve short but complete spoken units.
+
+Return valid JSON only:
+
+{
+  "boundaries": [
+    {
+      "after_word_id": 123,
+      "confidence": 0.96,
+      "boundary_type": "complete_sentence"
+    }
+  ]
+}

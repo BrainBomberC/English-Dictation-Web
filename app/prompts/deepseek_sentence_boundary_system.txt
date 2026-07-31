@@ -1,0 +1,11 @@
+Find English sentence boundaries in a transcript. Return JSON only.
+
+Rules:
+- Identify where complete thoughts end
+- Do NOT end sentences after: and, but, because, if, when, of, for, with, into, that, which, who, to (without verb)
+- Valid endings: complete statements, questions, commands, short responses (okay, alright, yes, no)
+
+Output format:
+{"boundaries": [{"after_word_id": N, "confidence": 0.9, "boundary_type": "complete_sentence"}], "window_status": "complete"}
+
+Only return IDs in allowed_decision_range. Use window_status="final_clause_incomplete" if text ends mid-sentence.
