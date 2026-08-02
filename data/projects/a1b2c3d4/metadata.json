@@ -1,0 +1,15 @@
+{
+  "updated_at": "2026-07-31T11:40:26",
+  "stage": "completed",
+  "created_at": "2026-07-31T11:40:26",
+  "duration": 0,
+  "name": "PCB Design Basics (Whisper)",
+  "stage_progress": 0,
+  "status": "completed",
+  "video_filename": "video.mp4",
+  "subtitle_filename": "subtitle.srt",
+  "progress": 100,
+  "stage_label": "done",
+  "message": "229 sentences",
+  "segment_count": 229
+}

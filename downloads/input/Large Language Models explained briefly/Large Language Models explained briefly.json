@@ -1,0 +1,2056 @@
+{
+	"systeminfo": "WHISPER : COREML = 0 | OPENVINO = 0 | CPU : SSE3 = 1 | SSSE3 = 1 | AVX = 1 | AVX2 = 1 | F16C = 1 | FMA = 1 | BMI2 = 1 | OPENMP = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "large",
+		"multilingual": true,
+		"vocab": 51866,
+		"audio": {
+			"ctx": 1500,
+			"state": 1280,
+			"head": 20,
+			"layer": 32
+		},
+		"text": {
+			"ctx": 448,
+			"state": 1280,
+			"head": 20,
+			"layer": 32
+		},
+		"mels": 128,
+		"ftype": 1
+	},
+	"params": {
+		"model": "/home/brain/桌面/StudyNotes/LLM/whisper-models/ggml-large-v3.bin",
+		"language": "auto",
+		"translate": false
+	},
+	"result": {
+		"language": "en"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:03,890"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 3890
+			},
+			"text": " Imagine you happen across a short movie script that"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:03,890",
+				"to": "00:00:06,120"
+			},
+			"offsets": {
+				"from": 3890,
+				"to": 6120
+			},
+			"text": " describes a scene between a person and"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:06,120",
+				"to": "00:00:07,600"
+			},
+			"offsets": {
+				"from": 6120,
+				"to": 7600
+			},
+			"text": " their AI assistant."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:07,600",
+				"to": "00:00:11,490"
+			},
+			"offsets": {
+				"from": 7600,
+				"to": 11490
+			},
+			"text": " The script has what the person asks the AI, but the AI's"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:11,490",
+				"to": "00:00:13,680"
+			},
+			"offsets": {
+				"from": 11490,
+				"to": 13680
+			},
+			"text": " response has been torn off."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:13,680",
+				"to": "00:00:16,760"
+			},
+			"offsets": {
+				"from": 13680,
+				"to": 16760
+			},
+			"text": " Suppose you also have this powerful magical machine that"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:16,760",
+				"to": "00:00:18,360"
+			},
+			"offsets": {
+				"from": 16760,
+				"to": 18360
+			},
+			"text": " can take any text and provide"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:18,360",
+				"to": "00:00:21,500"
+			},
+			"offsets": {
+				"from": 18360,
+				"to": 21500
+			},
+			"text": " a sensible prediction of what word comes next."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:21,500",
+				"to": "00:00:23,820"
+			},
+			"offsets": {
+				"from": 21500,
+				"to": 23820
+			},
+			"text": " You could then finish the script by feeding in what you"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:23,820",
+				"to": "00:00:25,380"
+			},
+			"offsets": {
+				"from": 23820,
+				"to": 25380
+			},
+			"text": " have to the machine, seeing what"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:25,380",
+				"to": "00:00:28,510"
+			},
+			"offsets": {
+				"from": 25380,
+				"to": 28510
+			},
+			"text": " it would predict to start the AI's answer, and then"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:28,510",
+				"to": "00:00:30,680"
+			},
+			"offsets": {
+				"from": 28510,
+				"to": 30680
+			},
+			"text": " repeating this over and over with"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:30,680",
+				"to": "00:00:33,520"
+			},
+			"offsets": {
+				"from": 30680,
+				"to": 33520
+			},
+			"text": " a growing script completing the dialogue."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:33,520",
+				"to": "00:00:36,270"
+			},
+			"offsets": {
+				"from": 33520,
+				"to": 36270
+			},
+			"text": " When you interact with a chatbot, this is exactly what's"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:36,270",
+				"to": "00:00:37,060"
+			},
+			"offsets": {
+				"from": 36270,
+				"to": 37060
+			},
+			"text": " happening."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:37,060",
+				"to": "00:00:39,980"
+			},
+			"offsets": {
+				"from": 37060,
+				"to": 39980
+			},
+			"text": " A large language model is a sophisticated mathematical"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:39,980",
+				"to": "00:00:41,660"
+			},
+			"offsets": {
+				"from": 39980,
+				"to": 41660
+			},
+			"text": " function that predicts what word"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:41,660",
+				"to": "00:00:44,540"
+			},
+			"offsets": {
+				"from": 41660,
+				"to": 44540
+			},
+			"text": " comes next for any piece of text."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:44,540",
+				"to": "00:00:47,610"
+			},
+			"offsets": {
+				"from": 44540,
+				"to": 47610
+			},
+			"text": " Instead of predicting one word with certainty, though, what"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:47,610",
+				"to": "00:00:49,260"
+			},
+			"offsets": {
+				"from": 47610,
+				"to": 49260
+			},
+			"text": " it does is assign a probability"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:49,260",
+				"to": "00:00:51,680"
+			},
+			"offsets": {
+				"from": 49260,
+				"to": 51680
+			},
+			"text": " to all possible next words."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:51,680",
+				"to": "00:00:54,590"
+			},
+			"offsets": {
+				"from": 51680,
+				"to": 54590
+			},
+			"text": " To build a chatbot, what you do is lay out some text that"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:54,590",
+				"to": "00:00:55,020"
+			},
+			"offsets": {
+				"from": 54590,
+				"to": 55020
+			},
+			"text": " describes"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:55,020",
+				"to": "00:00:55,020"
+			},
+			"offsets": {
+				"from": 55020,
+				"to": 55020
+			},
+			"text": " an interesting situation."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:55,380",
+				"to": "00:00:57,910"
+			},
+			"offsets": {
+				"from": 55380,
+				"to": 57910
+			},
+			"text": " For instance, you have the interaction between a user and a"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:57,910",
+				"to": "00:00:59,320"
+			},
+			"offsets": {
+				"from": 57910,
+				"to": 59320
+			},
+			"text": " hypothetical AI assistant."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:59,320",
+				"to": "00:01:02,350"
+			},
+			"offsets": {
+				"from": 59320,
+				"to": 62350
+			},
+			"text": " You add on whatever the user types in as the first part of"
+		},
+		{
+			"timestamps": {
+				"from": "00:01:02,350",
+				"to": "00:01:04,140"
+			},
+			"offsets": {
+				"from": 62350,
+				"to": 64140
+			},
+			"text": " that interaction, and then you"
+		},
+		{
+			"timestamps": {
+				"from": "00:01:04,140",
+				"to": "00:01:07,480"
+			},
+			"offsets": {
+				"from": 64140,
+				"to": 67480
+			},
+			"text": " have the model repeatedly predict the next word that such a"
+		},
+		{
+			"timestamps": {
+				"from": "00:01:07,480",
+				"to": "00:01:09,000"
+			},
+			"offsets": {
+				"from": 67480,
+				"to": 69000
+			},
+			"text": " hypothetical AI assistant"
+		},
+		{
+			"timestamps": {
+				"from": "00:01:09,000",
+				"to": "00:01:12,770"
+			},
+			"offsets": {
+				"from": 69000,
+				"to": 72770
+			},
+			"text": " would say in response, and that's what's presented to the"
+		},
+		{
+			"timestamps": {
+				"from": "00:01:12,770",
+				"to": "00:01:13,180"
+			},
+			"offsets": {
+				"from": 72770,
+				"to": 73180
+			},
+			"text": " user."
+		},
+		{
+			"timestamps": {
+				"from": "00:01:13,180",
+				"to": "00:01:15,790"
+			},
+			"offsets": {
+				"from": 73180,
+				"to": 75790
+			},
+			"text": " In doing this, the output tends to look a lot more natural"
+		},
+		{
+			"timestamps": {
+				"from": "00:01:15,790",
+				"to": "00:01:16,940"
+			},
+			"offsets": {
+				"from": 75790,
+				"to": 76940
+			},
+			"text": " if you allow it to select"
+		},
+		{
+			"timestamps": {
+				"from": "00:01:16,940",
+				"to": "00:01:20,180"
+			},
+			"offsets": {
+				"from": 76940,
+				"to": 80180
+			},
+			"text": " less likely words along the way at random."
+		},
+		{
+			"timestamps": {
+				"from": "00:01:20,180",
+				"to": "00:01:22,760"
+			},
+			"offsets": {
+				"from": 80180,
+				"to": 82760
+			},
+			"text": " So what this means is even though the model itself is"
+		},
+		{
+			"timestamps": {
+				"from": "00:01:22,760",
+				"to": "00:01:24,940"
+			},
+			"offsets": {
+				"from": 82760,
+				"to": 84940
+			},
+			"text": " deterministic, a given prompt typically"
+		},
+		{
+			"timestamps": {
+				"from": "00:01:24,940",
+				"to": "00:01:28,260"
+			},
+			"offsets": {
+				"from": 84940,
+				"to": 88260
+			},
+			"text": " gives a different answer each time it's run."
+		},
+		{
+			"timestamps": {
+				"from": "00:01:28,260",
+				"to": "00:01:31,380"
+			},
+			"offsets": {
+				"from": 88260,
+				"to": 91380
+			},
+			"text": " Models learn how to make these predictions by processing an"
+		},
+		{
+			"timestamps": {
+				"from": "00:01:31,380",
+				"to": "00:01:32,840"
+			},
+			"offsets": {
+				"from": 91380,
+				"to": 92840
+			},
+			"text": " enormous amount of text,"
+		},
+		{
+			"timestamps": {
+				"from": "00:01:32,840",
+				"to": "00:01:34,620"
+			},
+			"offsets": {
+				"from": 92840,
+				"to": 94620
+			},
+			"text": " typically pulled from the internet."
+		},
+		{
+			"timestamps": {
+				"from": "00:01:34,620",
+				"to": "00:01:37,350"
+			},
+			"offsets": {
+				"from": 94620,
+				"to": 97350
+			},
+			"text": " For a standard human to read the amount of text that was"
+		},
+		{
+			"timestamps": {
+				"from": "00:01:37,350",
+				"to": "00:01:39,700"
+			},
+			"offsets": {
+				"from": 97350,
+				"to": 99700
+			},
+			"text": " used to train GPT-3, for example,"
+		},
+		{
+			"timestamps": {
+				"from": "00:01:39,700",
+				"to": "00:01:44,920"
+			},
+			"offsets": {
+				"from": 99700,
+				"to": 104920
+			},
+			"text": " if they read non-stop 24/7, it would take over 2600 years."
+		},
+		{
+			"timestamps": {
+				"from": "00:01:44,920",
+				"to": "00:01:48,280"
+			},
+			"offsets": {
+				"from": 104920,
+				"to": 108280
+			},
+			"text": " Larger models since then train on much, much more."
+		},
+		{
+			"timestamps": {
+				"from": "00:01:48,280",
+				"to": "00:01:51,200"
+			},
+			"offsets": {
+				"from": 108280,
+				"to": 111200
+			},
+			"text": " You can think of training a little bit like tuning the dial"
+		},
+		{
+			"timestamps": {
+				"from": "00:01:51,200",
+				"to": "00:01:52,320"
+			},
+			"offsets": {
+				"from": 111200,
+				"to": 112320
+			},
+			"text": "s on a big machine."
+		},
+		{
+			"timestamps": {
+				"from": "00:01:52,320",
+				"to": "00:01:52,610"
+			},
+			"offsets": {
+				"from": 112320,
+				"to": 112610
+			},
+			"text": " The way that a language model behaves is entirely"
+		},
+		{
+			"timestamps": {
+				"from": "00:01:52,610",
+				"to": "00:01:52,940"
+			},
+			"offsets": {
+				"from": 112610,
+				"to": 112940
+			},
+			"text": " determined by the type of model that you're"
+		},
+		{
+			"timestamps": {
+				"from": "00:01:52,940",
+				"to": "00:01:52,980"
+			},
+			"offsets": {
+				"from": 112940,
+				"to": 112980
+			},
+			"text": " using."
+		},
+		{
+			"timestamps": {
+				"from": "00:01:52,980",
+				"to": "00:01:52,990"
+			},
+			"offsets": {
+				"from": 112980,
+				"to": 112990
+			},
+			"text": " You can think of training a little bit like tuning the dial"
+		},
+		{
+			"timestamps": {
+				"from": "00:01:52,990",
+				"to": "00:01:53,080"
+			},
+			"offsets": {
+				"from": 112990,
+				"to": 113080
+			},
+			"text": "s on a big machine."
+		},
+		{
+			"timestamps": {
+				"from": "00:01:53,080",
+				"to": "00:01:53,210"
+			},
+			"offsets": {
+				"from": 113080,
+				"to": 113210
+			},
+			"text": " The way that a language model behaves is entirely"
+		},
+		{
+			"timestamps": {
+				"from": "00:01:53,210",
+				"to": "00:01:53,400"
+			},
+			"offsets": {
+				"from": 113210,
+				"to": 113400
+			},
+			"text": " determined by the type of model that you're"
+		},
+		{
+			"timestamps": {
+				"from": "00:01:53,400",
+				"to": "00:01:53,560"
+			},
+			"offsets": {
+				"from": 113400,
+				"to": 113560
+			},
+			"text": " using."
+		},
+		{
+			"timestamps": {
+				"from": "00:01:53,560",
+				"to": "00:01:53,880"
+			},
+			"offsets": {
+				"from": 113560,
+				"to": 113880
+			},
+			"text": " You can think of training a little bit like tuning the dial"
+		},
+		{
+			"timestamps": {
+				"from": "00:01:53,880",
+				"to": "00:01:54,060"
+			},
+			"offsets": {
+				"from": 113880,
+				"to": 114060
+			},
+			"text": "s on a big machine."
+		},
+		{
+			"timestamps": {
+				"from": "00:01:54,060",
+				"to": "00:01:57,310"
+			},
+			"offsets": {
+				"from": 114060,
+				"to": 117310
+			},
+			"text": " entirely determined by these many different continuous"
+		},
+		{
+			"timestamps": {
+				"from": "00:01:57,310",
+				"to": "00:01:59,500"
+			},
+			"offsets": {
+				"from": 117310,
+				"to": 119500
+			},
+			"text": " values, usually called parameters"
+		},
+		{
+			"timestamps": {
+				"from": "00:01:59,500",
+				"to": "00:02:03,540"
+			},
+			"offsets": {
+				"from": 119500,
+				"to": 123540
+			},
+			"text": " or weights. Changing those parameters will change the"
+		},
+		{
+			"timestamps": {
+				"from": "00:02:03,540",
+				"to": "00:02:05,500"
+			},
+			"offsets": {
+				"from": 123540,
+				"to": 125500
+			},
+			"text": " probabilities that the model gives for the"
+		},
+		{
+			"timestamps": {
+				"from": "00:02:05,500",
+				"to": "00:02:09,270"
+			},
+			"offsets": {
+				"from": 125500,
+				"to": 129270
+			},
+			"text": " next word on a given input. What puts the large in large"
+		},
+		{
+			"timestamps": {
+				"from": "00:02:09,270",
+				"to": "00:02:11,500"
+			},
+			"offsets": {
+				"from": 129270,
+				"to": 131500
+			},
+			"text": " language model is how they can have"
+		},
+		{
+			"timestamps": {
+				"from": "00:02:11,500",
+				"to": "00:02:15,450"
+			},
+			"offsets": {
+				"from": 131500,
+				"to": 135450
+			},
+			"text": " hundreds of billions of these parameters. No human ever"
+		},
+		{
+			"timestamps": {
+				"from": "00:02:15,450",
+				"to": "00:02:18,300"
+			},
+			"offsets": {
+				"from": 135450,
+				"to": 138300
+			},
+			"text": " deliberately sets those parameters."
+		},
+		{
+			"timestamps": {
+				"from": "00:02:18,300",
+				"to": "00:02:21,210"
+			},
+			"offsets": {
+				"from": 138300,
+				"to": 141210
+			},
+			"text": " Instead, they begin at random, meaning the model just"
+		},
+		{
+			"timestamps": {
+				"from": "00:02:21,210",
+				"to": "00:02:23,500"
+			},
+			"offsets": {
+				"from": 141210,
+				"to": 143500
+			},
+			"text": " outputs gibberish, but they're repeatedly"
+		},
+		{
+			"timestamps": {
+				"from": "00:02:23,500",
+				"to": "00:02:27,270"
+			},
+			"offsets": {
+				"from": 143500,
+				"to": 147270
+			},
+			"text": " refined based on many example pieces of text. One of these"
+		},
+		{
+			"timestamps": {
+				"from": "00:02:27,270",
+				"to": "00:02:29,580"
+			},
+			"offsets": {
+				"from": 147270,
+				"to": 149580
+			},
+			"text": " training examples could be just a handful"
+		},
+		{
+			"timestamps": {
+				"from": "00:02:29,580",
+				"to": "00:02:32,760"
+			},
+			"offsets": {
+				"from": 149580,
+				"to": 152760
+			},
+			"text": " of words, or it could be thousands, but in either case the"
+		},
+		{
+			"timestamps": {
+				"from": "00:02:32,760",
+				"to": "00:02:35,020"
+			},
+			"offsets": {
+				"from": 152760,
+				"to": 155020
+			},
+			"text": " way this works is to pass in all but the"
+		},
+		{
+			"timestamps": {
+				"from": "00:02:35,020",
+				"to": "00:02:38,400"
+			},
+			"offsets": {
+				"from": 155020,
+				"to": 158400
+			},
+			"text": " last word from that example into the model and compare the"
+		},
+		{
+			"timestamps": {
+				"from": "00:02:38,400",
+				"to": "00:02:40,860"
+			},
+			"offsets": {
+				"from": 158400,
+				"to": 160860
+			},
+			"text": " prediction that it makes with the true"
+		},
+		{
+			"timestamps": {
+				"from": "00:02:40,860",
+				"to": "00:02:44,950"
+			},
+			"offsets": {
+				"from": 160860,
+				"to": 164950
+			},
+			"text": " last word from the example. An algorithm called backpropag"
+		},
+		{
+			"timestamps": {
+				"from": "00:02:44,950",
+				"to": "00:02:47,100"
+			},
+			"offsets": {
+				"from": 164950,
+				"to": 167100
+			},
+			"text": "ation is used to tweak all of the"
+		},
+		{
+			"timestamps": {
+				"from": "00:02:47,100",
+				"to": "00:02:50,420"
+			},
+			"offsets": {
+				"from": 167100,
+				"to": 170420
+			},
+			"text": " parameters in such a way that it makes the model a little"
+		},
+		{
+			"timestamps": {
+				"from": "00:02:50,420",
+				"to": "00:02:52,940"
+			},
+			"offsets": {
+				"from": 170420,
+				"to": 172940
+			},
+			"text": " more likely to choose the true last word and"
+		},
+		{
+			"timestamps": {
+				"from": "00:02:52,940",
+				"to": "00:02:56,710"
+			},
+			"offsets": {
+				"from": 172940,
+				"to": 176710
+			},
+			"text": " a little less likely to choose all the others. When you do"
+		},
+		{
+			"timestamps": {
+				"from": "00:02:56,710",
+				"to": "00:02:58,860"
+			},
+			"offsets": {
+				"from": 176710,
+				"to": 178860
+			},
+			"text": " this for many, many trillions of"
+		},
+		{
+			"timestamps": {
+				"from": "00:02:58,860",
+				"to": "00:03:01,480"
+			},
+			"offsets": {
+				"from": 178860,
+				"to": 181480
+			},
+			"text": " examples, not only does the model start to give more"
+		},
+		{
+			"timestamps": {
+				"from": "00:03:01,480",
+				"to": "00:03:03,660"
+			},
+			"offsets": {
+				"from": 181480,
+				"to": 183660
+			},
+			"text": " accurate predictions on the training data,"
+		},
+		{
+			"timestamps": {
+				"from": "00:03:03,660",
+				"to": "00:03:06,580"
+			},
+			"offsets": {
+				"from": 183660,
+				"to": 186580
+			},
+			"text": " but it also starts to make more reasonable predictions on"
+		},
+		{
+			"timestamps": {
+				"from": "00:03:06,580",
+				"to": "00:03:08,220"
+			},
+			"offsets": {
+				"from": 186580,
+				"to": 188220
+			},
+			"text": " text that it's never seen before."
+		},
+		{
+			"timestamps": {
+				"from": "00:03:09,260",
+				"to": "00:03:12,360"
+			},
+			"offsets": {
+				"from": 189260,
+				"to": 192360
+			},
+			"text": " Given the huge number of parameters and the enormous amount"
+		},
+		{
+			"timestamps": {
+				"from": "00:03:12,360",
+				"to": "00:03:13,740"
+			},
+			"offsets": {
+				"from": 192360,
+				"to": 193740
+			},
+			"text": " of training data,"
+		},
+		{
+			"timestamps": {
+				"from": "00:03:13,740",
+				"to": "00:03:16,540"
+			},
+			"offsets": {
+				"from": 193740,
+				"to": 196540
+			},
+			"text": " the scale of computation involved in training a large"
+		},
+		{
+			"timestamps": {
+				"from": "00:03:16,540",
+				"to": "00:03:18,780"
+			},
+			"offsets": {
+				"from": 196540,
+				"to": 198780
+			},
+			"text": " language model is mind-boggling."
+		},
+		{
+			"timestamps": {
+				"from": "00:03:19,420",
+				"to": "00:03:22,380"
+			},
+			"offsets": {
+				"from": 199420,
+				"to": 202380
+			},
+			"text": " To illustrate, imagine that you could perform one billion"
+		},
+		{
+			"timestamps": {
+				"from": "00:03:22,380",
+				"to": "00:03:26,170"
+			},
+			"offsets": {
+				"from": 202380,
+				"to": 206170
+			},
+			"text": " additions and multiplications every single second. How long"
+		},
+		{
+			"timestamps": {
+				"from": "00:03:26,170",
+				"to": "00:03:27,580"
+			},
+			"offsets": {
+				"from": 206170,
+				"to": 207580
+			},
+			"text": " do you think that it would take"
+		},
+		{
+			"timestamps": {
+				"from": "00:03:27,580",
+				"to": "00:03:30,620"
+			},
+			"offsets": {
+				"from": 207580,
+				"to": 210620
+			},
+			"text": " for you to do all of the operations involved in training"
+		},
+		{
+			"timestamps": {
+				"from": "00:03:30,620",
+				"to": "00:03:32,460"
+			},
+			"offsets": {
+				"from": 210620,
+				"to": 212460
+			},
+			"text": " the largest language models?"
+		},
+		{
+			"timestamps": {
+				"from": "00:03:33,180",
+				"to": "00:03:37,160"
+			},
+			"offsets": {
+				"from": 213180,
+				"to": 217160
+			},
+			"text": " Do you think it would take a year? Maybe something like 10,"
+		},
+		{
+			"timestamps": {
+				"from": "00:03:37,160",
+				"to": "00:03:37,820"
+			},
+			"offsets": {
+				"from": 217160,
+				"to": 217820
+			},
+			"text": "000 years?"
+		},
+		{
+			"timestamps": {
+				"from": "00:03:38,780",
+				"to": "00:03:42,020"
+			},
+			"offsets": {
+				"from": 218780,
+				"to": 222020
+			},
+			"text": " The answer is actually much more than that. It's well over"
+		},
+		{
+			"timestamps": {
+				"from": "00:03:42,020",
+				"to": "00:03:46,380"
+			},
+			"offsets": {
+				"from": 222020,
+				"to": 226380
+			},
+			"text": " 100 million years. This is only part of"
+		},
+		{
+			"timestamps": {
+				"from": "00:03:46,380",
+				"to": "00:03:49,300"
+			},
+			"offsets": {
+				"from": 226380,
+				"to": 229300
+			},
+			"text": " the story though. This whole process is called pre-training"
+		},
+		{
+			"timestamps": {
+				"from": "00:03:49,300",
+				"to": "00:03:51,820"
+			},
+			"offsets": {
+				"from": 229300,
+				"to": 231820
+			},
+			"text": ". The goal of auto-completing a random passage of"
+		},
+		{
+			"timestamps": {
+				"from": "00:03:51,820",
+				"to": "00:03:54,880"
+			},
+			"offsets": {
+				"from": 231820,
+				"to": 234880
+			},
+			"text": " text from the internet is very different from the goal of"
+		},
+		{
+			"timestamps": {
+				"from": "00:03:54,880",
+				"to": "00:03:56,540"
+			},
+			"offsets": {
+				"from": 234880,
+				"to": 236540
+			},
+			"text": " being a good AI assistant."
+		},
+		{
+			"timestamps": {
+				"from": "00:03:56,540",
+				"to": "00:04:00,040"
+			},
+			"offsets": {
+				"from": 236540,
+				"to": 240040
+			},
+			"text": " To address this, chatbots undergo another type of training,"
+		},
+		{
+			"timestamps": {
+				"from": "00:04:00,040",
+				"to": "00:04:01,100"
+			},
+			"offsets": {
+				"from": 240040,
+				"to": 241100
+			},
+			"text": " just as important,"
+		},
+		{
+			"timestamps": {
+				"from": "00:04:01,100",
+				"to": "00:04:04,420"
+			},
+			"offsets": {
+				"from": 241100,
+				"to": 244420
+			},
+			"text": " called reinforcement learning with human feedback. Workers"
+		},
+		{
+			"timestamps": {
+				"from": "00:04:04,420",
+				"to": "00:04:07,500"
+			},
+			"offsets": {
+				"from": 244420,
+				"to": 247500
+			},
+			"text": " flag unhelpful or problematic predictions,"
+		},
+		{
+			"timestamps": {
+				"from": "00:04:07,500",
+				"to": "00:04:10,700"
+			},
+			"offsets": {
+				"from": 247500,
+				"to": 250700
+			},
+			"text": " and their corrections further change the model's parameters"
+		},
+		{
+			"timestamps": {
+				"from": "00:04:10,700",
+				"to": "00:04:10,860"
+			},
+			"offsets": {
+				"from": 250700,
+				"to": 250860
+			},
+			"text": ","
+		},
+		{
+			"timestamps": {
+				"from": "00:04:10,860",
+				"to": "00:04:13,980"
+			},
+			"offsets": {
+				"from": 250860,
+				"to": 253980
+			},
+			"text": " making them more likely to give predictions that users"
+		},
+		{
+			"timestamps": {
+				"from": "00:04:13,980",
+				"to": "00:04:14,620"
+			},
+			"offsets": {
+				"from": 253980,
+				"to": 254620
+			},
+			"text": " prefer."
+		},
+		{
+			"timestamps": {
+				"from": "00:04:15,260",
+				"to": "00:04:18,180"
+			},
+			"offsets": {
+				"from": 255260,
+				"to": 258180
+			},
+			"text": " Looking back at the pre-training though, this staggering"
+		},
+		{
+			"timestamps": {
+				"from": "00:04:18,180",
+				"to": "00:04:20,220"
+			},
+			"offsets": {
+				"from": 258180,
+				"to": 260220
+			},
+			"text": " amount of computation is only made"
+		},
+		{
+			"timestamps": {
+				"from": "00:04:20,220",
+				"to": "00:04:21,260"
+			},
+			"offsets": {
+				"from": 260220,
+				"to": 261260
+			},
+			"text": " possible by using a large number of different models that"
+		},
+		{
+			"timestamps": {
+				"from": "00:04:21,260",
+				"to": "00:04:21,260"
+			},
+			"offsets": {
+				"from": 261260,
+				"to": 261260
+			},
+			"text": " can be used in the training process."
+		},
+		{
+			"timestamps": {
+				"from": "00:04:21,260",
+				"to": "00:04:21,620"
+			},
+			"offsets": {
+				"from": 261260,
+				"to": 261620
+			},
+			"text": " Some of these models can be used in the training process by"
+		},
+		{
+			"timestamps": {
+				"from": "00:04:21,620",
+				"to": "00:04:22,220"
+			},
+			"offsets": {
+				"from": 261620,
+				"to": 262220
+			},
+			"text": " using special computer"
+		},
+		{
+			"timestamps": {
+				"from": "00:04:22,220",
+				"to": "00:04:25,570"
+			},
+			"offsets": {
+				"from": 262220,
+				"to": 265570
+			},
+			"text": " chips that are optimized for running many, many operations"
+		},
+		{
+			"timestamps": {
+				"from": "00:04:25,570",
+				"to": "00:04:27,900"
+			},
+			"offsets": {
+				"from": 265570,
+				"to": 267900
+			},
+			"text": " in parallel, known as GPUs."
+		},
+		{
+			"timestamps": {
+				"from": "00:04:27,900",
+				"to": "00:04:31,670"
+			},
+			"offsets": {
+				"from": 267900,
+				"to": 271670
+			},
+			"text": " However, not all language models can be easily parallelized"
+		},
+		{
+			"timestamps": {
+				"from": "00:04:31,670",
+				"to": "00:04:33,740"
+			},
+			"offsets": {
+				"from": 271670,
+				"to": 273740
+			},
+			"text": ". Prior to 2017,"
+		},
+		{
+			"timestamps": {
+				"from": "00:04:33,740",
+				"to": "00:04:37,090"
+			},
+			"offsets": {
+				"from": 273740,
+				"to": 277090
+			},
+			"text": " most language models would process text one word at a time."
+		},
+		{
+			"timestamps": {
+				"from": "00:04:37,090",
+				"to": "00:04:37,740"
+			},
+			"offsets": {
+				"from": 277090,
+				"to": 277740
+			},
+			"text": " But then,"
+		},
+		{
+			"timestamps": {
+				"from": "00:04:37,740",
+				"to": "00:04:40,810"
+			},
+			"offsets": {
+				"from": 277740,
+				"to": 280810
+			},
+			"text": " a team of researchers at Google introduced a new model"
+		},
+		{
+			"timestamps": {
+				"from": "00:04:40,810",
+				"to": "00:04:44,300"
+			},
+			"offsets": {
+				"from": 280810,
+				"to": 284300
+			},
+			"text": " known as the Transformer. Transformers don't"
+		},
+		{
+			"timestamps": {
+				"from": "00:04:44,300",
+				"to": "00:04:47,620"
+			},
+			"offsets": {
+				"from": 284300,
+				"to": 287620
+			},
+			"text": " read text from the start to the finish. They soak it all in"
+		},
+		{
+			"timestamps": {
+				"from": "00:04:47,620",
+				"to": "00:04:50,700"
+			},
+			"offsets": {
+				"from": 287620,
+				"to": 290700
+			},
+			"text": " at once, in parallel. The very first step"
+		},
+		{
+			"timestamps": {
+				"from": "00:04:50,700",
+				"to": "00:04:54,840"
+			},
+			"offsets": {
+				"from": 290700,
+				"to": 294840
+			},
+			"text": " inside a Transformer, and most other language models for"
+		},
+		{
+			"timestamps": {
+				"from": "00:04:54,840",
+				"to": "00:04:55,820"
+			},
+			"offsets": {
+				"from": 294840,
+				"to": 295820
+			},
+			"text": " that matter, is to associate each word"
+		},
+		{
+			"timestamps": {
+				"from": "00:04:55,820",
+				"to": "00:04:58,760"
+			},
+			"offsets": {
+				"from": 295820,
+				"to": 298760
+			},
+			"text": " with a long list of numbers. The reason for this is that"
+		},
+		{
+			"timestamps": {
+				"from": "00:04:58,760",
+				"to": "00:05:00,940"
+			},
+			"offsets": {
+				"from": 298760,
+				"to": 300940
+			},
+			"text": " the training process only works with"
+		},
+		{
+			"timestamps": {
+				"from": "00:05:00,940",
+				"to": "00:05:04,480"
+			},
+			"offsets": {
+				"from": 300940,
+				"to": 304480
+			},
+			"text": " continuous values, so you have to somehow encode language"
+		},
+		{
+			"timestamps": {
+				"from": "00:05:04,480",
+				"to": "00:05:07,100"
+			},
+			"offsets": {
+				"from": 304480,
+				"to": 307100
+			},
+			"text": " using numbers, and each list of numbers"
+		},
+		{
+			"timestamps": {
+				"from": "00:05:07,100",
+				"to": "00:05:10,870"
+			},
+			"offsets": {
+				"from": 307100,
+				"to": 310870
+			},
+			"text": " may somehow encode the meaning of the corresponding word."
+		},
+		{
+			"timestamps": {
+				"from": "00:05:10,870",
+				"to": "00:05:12,780"
+			},
+			"offsets": {
+				"from": 310870,
+				"to": 312780
+			},
+			"text": " What makes Transformers unique is their"
+		},
+		{
+			"timestamps": {
+				"from": "00:05:12,780",
+				"to": "00:05:16,860"
+			},
+			"offsets": {
+				"from": 312780,
+				"to": 316860
+			},
+			"text": " reliance on a special operation known as attention. This"
+		},
+		{
+			"timestamps": {
+				"from": "00:05:16,860",
+				"to": "00:05:19,900"
+			},
+			"offsets": {
+				"from": 316860,
+				"to": 319900
+			},
+			"text": " gives all these lists of numbers a chance to"
+		},
+		{
+			"timestamps": {
+				"from": "00:05:20,140",
+				"to": "00:05:23,500"
+			},
+			"offsets": {
+				"from": 320140,
+				"to": 323500
+			},
+			"text": " talk to one another, and refine the meanings they encode"
+		},
+		{
+			"timestamps": {
+				"from": "00:05:23,500",
+				"to": "00:05:26,300"
+			},
+			"offsets": {
+				"from": 323500,
+				"to": 326300
+			},
+			"text": " based on the context around, all done in"
+		},
+		{
+			"timestamps": {
+				"from": "00:05:26,300",
+				"to": "00:05:30,080"
+			},
+			"offsets": {
+				"from": 326300,
+				"to": 330080
+			},
+			"text": " parallel. For example, the numbers encoding the word \"bank\""
+		},
+		{
+			"timestamps": {
+				"from": "00:05:30,080",
+				"to": "00:05:32,220"
+			},
+			"offsets": {
+				"from": 330080,
+				"to": 332220
+			},
+			"text": " might be changed based on the context"
+		},
+		{
+			"timestamps": {
+				"from": "00:05:32,220",
+				"to": "00:05:35,320"
+			},
+			"offsets": {
+				"from": 332220,
+				"to": 335320
+			},
+			"text": " surrounding it, to somehow encode the more specific notion"
+		},
+		{
+			"timestamps": {
+				"from": "00:05:35,320",
+				"to": "00:05:38,300"
+			},
+			"offsets": {
+				"from": 335320,
+				"to": 338300
+			},
+			"text": " of a riverbank. Transformers"
+		},
+		{
+			"timestamps": {
+				"from": "00:05:38,300",
+				"to": "00:05:41,740"
+			},
+			"offsets": {
+				"from": 338300,
+				"to": 341740
+			},
+			"text": " typically also include a second type of operation, known as"
+		},
+		{
+			"timestamps": {
+				"from": "00:05:41,740",
+				"to": "00:05:43,980"
+			},
+			"offsets": {
+				"from": 341740,
+				"to": 343980
+			},
+			"text": " a feed-forward neural network, and this"
+		},
+		{
+			"timestamps": {
+				"from": "00:05:43,980",
+				"to": "00:05:46,780"
+			},
+			"offsets": {
+				"from": 343980,
+				"to": 346780
+			},
+			"text": " gives the model extra capacity to store more patterns about"
+		},
+		{
+			"timestamps": {
+				"from": "00:05:46,780",
+				"to": "00:05:48,620"
+			},
+			"offsets": {
+				"from": 346780,
+				"to": 348620
+			},
+			"text": " language learned during training."
+		},
+		{
+			"timestamps": {
+				"from": "00:05:49,580",
+				"to": "00:05:52,160"
+			},
+			"offsets": {
+				"from": 349580,
+				"to": 352160
+			},
+			"text": " This data repeatedly flows through many different"
+		},
+		{
+			"timestamps": {
+				"from": "00:05:52,160",
+				"to": "00:05:54,940"
+			},
+			"offsets": {
+				"from": 352160,
+				"to": 354940
+			},
+			"text": " iterations of these two fundamental operations,"
+		},
+		{
+			"timestamps": {
+				"from": "00:05:54,940",
+				"to": "00:05:58,710"
+			},
+			"offsets": {
+				"from": 354940,
+				"to": 358710
+			},
+			"text": " and as it does so, the hope is that each list of numbers is"
+		},
+		{
+			"timestamps": {
+				"from": "00:05:58,710",
+				"to": "00:06:01,100"
+			},
+			"offsets": {
+				"from": 358710,
+				"to": 361100
+			},
+			"text": " enriched to encode whatever information"
+		},
+		{
+			"timestamps": {
+				"from": "00:06:01,100",
+				"to": "00:06:04,420"
+			},
+			"offsets": {
+				"from": 361100,
+				"to": 364420
+			},
+			"text": " might be needed to make an accurate prediction of what word"
+		},
+		{
+			"timestamps": {
+				"from": "00:06:04,420",
+				"to": "00:06:07,580"
+			},
+			"offsets": {
+				"from": 364420,
+				"to": 367580
+			},
+			"text": " follows in the passage. At the end,"
+		},
+		{
+			"timestamps": {
+				"from": "00:06:07,580",
+				"to": "00:06:10,990"
+			},
+			"offsets": {
+				"from": 367580,
+				"to": 370990
+			},
+			"text": " one final function is performed on the last vector in this"
+		},
+		{
+			"timestamps": {
+				"from": "00:06:10,990",
+				"to": "00:06:13,420"
+			},
+			"offsets": {
+				"from": 370990,
+				"to": 373420
+			},
+			"text": " sequence, which now has had a chance to be"
+		},
+		{
+			"timestamps": {
+				"from": "00:06:13,420",
+				"to": "00:06:16,340"
+			},
+			"offsets": {
+				"from": 373420,
+				"to": 376340
+			},
+			"text": " influenced by all the other context from the input text, as"
+		},
+		{
+			"timestamps": {
+				"from": "00:06:16,340",
+				"to": "00:06:19,020"
+			},
+			"offsets": {
+				"from": 376340,
+				"to": 379020
+			},
+			"text": " well as everything the model learned during training:"
+		},
+		{
+			"timestamps": {
+				"from": "00:06:19,020",
+				"to": "00:06:23,220"
+			},
+			"offsets": {
+				"from": 379020,
+				"to": 383220
+			},
+			"text": " to produce a prediction of the next word. Again, the model"
+		},
+		{
+			"timestamps": {
+				"from": "00:06:23,220",
+				"to": "00:06:25,500"
+			},
+			"offsets": {
+				"from": 383220,
+				"to": 385500
+			},
+			"text": "'s prediction looks like a probability"
+		},
+		{
+			"timestamps": {
+				"from": "00:06:25,500",
+				"to": "00:06:29,900"
+			},
+			"offsets": {
+				"from": 385500,
+				"to": 389900
+			},
+			"text": " for every possible next word. Although researchers design"
+		},
+		{
+			"timestamps": {
+				"from": "00:06:29,900",
+				"to": "00:06:31,820"
+			},
+			"offsets": {
+				"from": 389900,
+				"to": 391820
+			},
+			"text": " the framework for how each of these steps"
+		},
+		{
+			"timestamps": {
+				"from": "00:06:31,820",
+				"to": "00:06:35,010"
+			},
+			"offsets": {
+				"from": 391820,
+				"to": 395010
+			},
+			"text": " work, it's important to understand that the specific"
+		},
+		{
+			"timestamps": {
+				"from": "00:06:35,010",
+				"to": "00:06:37,180"
+			},
+			"offsets": {
+				"from": 395010,
+				"to": 397180
+			},
+			"text": " behavior is an emergent phenomenon"
+		},
+		{
+			"timestamps": {
+				"from": "00:06:37,180",
+				"to": "00:06:40,280"
+			},
+			"offsets": {
+				"from": 397180,
+				"to": 400280
+			},
+			"text": " based on how those hundreds of billions of parameters are"
+		},
+		{
+			"timestamps": {
+				"from": "00:06:40,280",
+				"to": "00:06:42,780"
+			},
+			"offsets": {
+				"from": 400280,
+				"to": 402780
+			},
+			"text": " tuned during training. This makes"
+		},
+		{
+			"timestamps": {
+				"from": "00:06:42,780",
+				"to": "00:06:45,780"
+			},
+			"offsets": {
+				"from": 402780,
+				"to": 405780
+			},
+			"text": " it incredibly challenging to determine why the model makes"
+		},
+		{
+			"timestamps": {
+				"from": "00:06:45,780",
+				"to": "00:06:48,460"
+			},
+			"offsets": {
+				"from": 405780,
+				"to": 408460
+			},
+			"text": " the exact predictions that it does. What"
+		},
+		{
+			"timestamps": {
+				"from": "00:06:48,460",
+				"to": "00:06:51,220"
+			},
+			"offsets": {
+				"from": 408460,
+				"to": 411220
+			},
+			"text": " you can see is that when you use large language model"
+		},
+		{
+			"timestamps": {
+				"from": "00:06:51,220",
+				"to": "00:06:53,580"
+			},
+			"offsets": {
+				"from": 411220,
+				"to": 413580
+			},
+			"text": " predictions to auto-complete a prompt,"
+		},
+		{
+			"timestamps": {
+				"from": "00:06:53,580",
+				"to": "00:06:56,820"
+			},
+			"offsets": {
+				"from": 413580,
+				"to": 416820
+			},
+			"text": " the words that it generates are uncannily fluent,"
+		},
+		{
+			"timestamps": {
+				"from": "00:06:56,820",
+				"to": "00:06:59,100"
+			},
+			"offsets": {
+				"from": 416820,
+				"to": 419100
+			},
+			"text": " fascinating, and even useful."
+		},
+		{
+			"timestamps": {
+				"from": "00:07:05,500",
+				"to": "00:07:07,570"
+			},
+			"offsets": {
+				"from": 425500,
+				"to": 427570
+			},
+			"text": " If you're a new viewer and you're curious about more"
+		},
+		{
+			"timestamps": {
+				"from": "00:07:07,570",
+				"to": "00:07:08,300"
+			},
+			"offsets": {
+				"from": 427570,
+				"to": 428300
+			},
+			"text": " details on how"
+		},
+		{
+			"timestamps": {
+				"from": "00:07:08,300",
+				"to": "00:07:11,060"
+			},
+			"offsets": {
+				"from": 428300,
+				"to": 431060
+			},
+			"text": " transformers and attention work, boy do I have some"
+		},
+		{
+			"timestamps": {
+				"from": "00:07:11,060",
+				"to": "00:07:12,220"
+			},
+			"offsets": {
+				"from": 431060,
+				"to": 432220
+			},
+			"text": " material for you!"
+		},
+		{
+			"timestamps": {
+				"from": "00:07:12,220",
+				"to": "00:07:15,040"
+			},
+			"offsets": {
+				"from": 432220,
+				"to": 435040
+			},
+			"text": " One option is to jump into a series I made about deep"
+		},
+		{
+			"timestamps": {
+				"from": "00:07:15,040",
+				"to": "00:07:17,900"
+			},
+			"offsets": {
+				"from": 435040,
+				"to": 437900
+			},
+			"text": " learning, where we visualize and motivate the"
+		},
+		{
+			"timestamps": {
+				"from": "00:07:17,900",
+				"to": "00:07:20,860"
+			},
+			"offsets": {
+				"from": 437900,
+				"to": 440860
+			},
+			"text": " details of attention and all the other steps in a"
+		},
+		{
+			"timestamps": {
+				"from": "00:07:20,860",
+				"to": "00:07:23,500"
+			},
+			"offsets": {
+				"from": 440860,
+				"to": 443500
+			},
+			"text": " transformer. But also, on my second channel,"
+		},
+		{
+			"timestamps": {
+				"from": "00:07:23,500",
+				"to": "00:07:26,000"
+			},
+			"offsets": {
+				"from": 443500,
+				"to": 446000
+			},
+			"text": " I just posted a talk that I gave a couple months ago about"
+		},
+		{
+			"timestamps": {
+				"from": "00:07:26,000",
+				"to": "00:07:28,860"
+			},
+			"offsets": {
+				"from": 446000,
+				"to": 448860
+			},
+			"text": " this topic for the company T&G in Munich."
+		},
+		{
+			"timestamps": {
+				"from": "00:07:28,860",
+				"to": "00:07:31,370"
+			},
+			"offsets": {
+				"from": 448860,
+				"to": 451370
+			},
+			"text": " Sometimes I actually prefer the content that I make as a"
+		},
+		{
+			"timestamps": {
+				"from": "00:07:31,370",
+				"to": "00:07:33,500"
+			},
+			"offsets": {
+				"from": 451370,
+				"to": 453500
+			},
+			"text": " casual talk rather than a produced video,"
+		},
+		{
+			"timestamps": {
+				"from": "00:07:33,500",
+				"to": "00:07:43,310"
+			},
+			"offsets": {
+				"from": 453500,
+				"to": 463310
+			},
+			"text": " but I leave it up to you which one of these feels like the"
+		},
+		{
+			"timestamps": {
+				"from": "00:07:43,310",
+				"to": "00:07:47,340"
+			},
+			"offsets": {
+				"from": 463310,
+				"to": 467340
+			},
+			"text": " better follow-on."
+		},
+		{
+			"timestamps": {
+				"from": "00:07:47,340",
+				"to": "00:07:49,410"
+			},
+			"offsets": {
+				"from": 467340,
+				"to": 469410
+			},
+			"text": " If you liked this video, be sure to give it a thumbs up,"
+		},
+		{
+			"timestamps": {
+				"from": "00:07:49,410",
+				"to": "00:07:57,340"
+			},
+			"offsets": {
+				"from": 469410,
+				"to": 477340
+			},
+			"text": " and I'll see you in the next one!"
+		}
+	]
+}

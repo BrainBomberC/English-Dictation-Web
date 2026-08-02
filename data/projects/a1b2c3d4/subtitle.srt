@@ -1,0 +1,1248 @@
+1
+00:00:00,000 --> 00:00:04,560
+ All right, we're going to introduce you guys to some basic concepts in PCB design.
+
+2
+00:00:04,800 --> 00:00:08,460
+ So for a lot of you, this will be the first time that you've ever designed a PCB.
+
+3
+00:00:08,680 --> 00:00:10,740
+ I suspect for most of you that's the case.
+
+4
+00:00:11,840 --> 00:00:16,240
+ And so there's a couple of important concepts that you'll want to kind of understand
+
+5
+00:00:16,240 --> 00:00:22,260
+ and some sort of basic terminology that you'll need to know to be able to understand what it is that you're doing.
+
+6
+00:00:22,860 --> 00:00:29,540
+ Now, the other video that Chandan has produced will describe how to go through and create your first design.
+
+7
+00:00:29,540 --> 00:00:34,600
+ So I wanted to give a little bit of an introduction to some of the concepts and some of the things that he discusses in there.
+
+8
+00:00:36,540 --> 00:00:44,640
+ So first of all, the process that he's going to take you through is to go through some of the key steps in the design process,
+
+9
+00:00:44,640 --> 00:00:48,100
+ which essentially begin with schematic capture.
+
+10
+00:00:48,700 --> 00:00:52,460
+ So at this point, it's sort of assumed that you've already kind of gone through your basic design.
+
+11
+00:00:52,460 --> 00:00:59,480
+ You know what your circuit is, and you place your schematic into the layout tool.
+
+12
+00:00:59,540 --> 00:01:01,900
+ All right, so you'll do that in Orcad.
+
+13
+00:01:02,480 --> 00:01:05,540
+ What you then do is you get that schematic ready for layout.
+
+14
+00:01:06,180 --> 00:01:10,540
+ So Chandan will walk you through that process, basically how you attach package symbols,
+
+15
+00:01:11,040 --> 00:01:12,520
+ specifically what we call footprints.
+
+16
+00:01:12,980 --> 00:01:22,400
+ In other words, how we actually go about putting in the specific ways in which the chip itself or the component itself is laid out.
+
+17
+00:01:22,660 --> 00:01:27,220
+ So there's some basic things sort of mechanically that we need to get you introduced to to understand this piece.
+
+18
+00:01:27,660 --> 00:01:29,180
+ And then creating a netlist.
+
+19
+00:01:29,540 --> 00:01:34,540
+ So a netlist is an important element of the manufacturing process.
+
+20
+00:01:34,980 --> 00:01:42,980
+ This netlist basically creates for us a list of all the nodes in the circuit and tells us where all the nodes are connected.
+
+21
+00:01:43,980 --> 00:01:52,980
+ Then it basically goes through setting up the PCB design environment, essentially creating some basic standards that he's going to use.
+
+22
+00:01:53,480 --> 00:01:58,480
+ So things like what basic line widths should be, what the vias are going to be.
+
+23
+00:01:58,480 --> 00:01:59,480
+ We're going to talk a lot more about that in a minute.
+
+24
+00:01:59,480 --> 00:01:59,520
+ So we're going to talk a lot more about that in a minute.
+
+25
+00:01:59,520 --> 00:01:59,520
+ So we're going to talk a lot more about that in a minute.
+
+26
+00:01:59,520 --> 00:02:01,360
+ We're going to talk a lot more about this later on in the semester.
+
+27
+00:02:01,520 --> 00:02:03,300
+ We're just getting introduced to it right now.
+
+28
+00:02:03,840 --> 00:02:07,840
+ But we're going to talk a little bit about why we have some of those constraints.
+
+29
+00:02:08,660 --> 00:02:13,340
+ Then you're going to go through the process of actually laying out the circuit and placing the components.
+
+30
+00:02:14,260 --> 00:02:16,000
+ And so I guess it's really two things.
+
+31
+00:02:16,080 --> 00:02:17,480
+ One is you're placing the components.
+
+32
+00:02:17,640 --> 00:02:22,980
+ And two, you're then routing, which means that what you're doing is you're routing the nets.
+
+33
+00:02:22,980 --> 00:02:28,800
+ You're basically connecting the individual components with various traces, we call them.
+
+34
+00:02:29,500 --> 00:02:33,160
+ Then you're kind of going through your last steps to kind of prepare for manufacturing.
+
+35
+00:02:33,740 --> 00:02:35,960
+ So getting what's called your silkscreen ready.
+
+36
+00:02:36,120 --> 00:02:37,360
+ So we'll talk about what that is.
+
+37
+00:02:37,560 --> 00:02:43,120
+ Then basically you're going to generate the files that are used to actually create this.
+
+38
+00:02:43,760 --> 00:02:46,980
+ In the initial video, Chandon doesn't really talk about these elements.
+
+39
+00:02:47,120 --> 00:02:48,420
+ We'll talk about some of those later.
+
+40
+00:02:49,040 --> 00:02:52,180
+ But basically what we're talking about is what we call our Gerber files or artwork.
+
+41
+00:02:52,840 --> 00:02:59,480
+ These are the files along with our drill files that tell the manufacturer how to manufacture.
+
+42
+00:02:59,640 --> 00:03:16,220
+ We then generate some basic documentation, things like a bill of materials for our components so that we know what components go on there and what components we need to purchase in order to complete the actual build of the board.
+
+43
+00:03:16,980 --> 00:03:19,840
+ And then what we do is we submit our files for a fabrication check.
+
+44
+00:03:20,420 --> 00:03:29,000
+ So for that, we actually send them to the manufacturer to see if there's any issues that might prevent the board from working.
+
+45
+00:03:29,460 --> 00:03:31,840
+ These issues are kind of mechanical things.
+
+46
+00:03:32,500 --> 00:03:44,560
+ As we'll see, there still might be other issues that arise electrically that, you know, really can't get picked up by the manufacturer.
+
+47
+00:03:44,720 --> 00:03:47,440
+ Things that, you know, may make the circuit not work.
+
+48
+00:03:48,160 --> 00:03:51,540
+ But this is really meant to see if, you know, things get too close to each other.
+
+49
+00:03:52,600 --> 00:03:54,800
+ Here's the – these are the basic steps.
+
+50
+00:03:55,380 --> 00:03:59,440
+ I want to talk a little bit about some of the things that – some of the terms, I guess.
+
+51
+00:03:59,440 --> 00:04:00,700
+ That I used in there.
+
+52
+00:04:01,560 --> 00:04:04,420
+ First of all, one of the things I described was a netlist.
+
+53
+00:04:04,900 --> 00:04:14,880
+ We're not going to talk much about the specifics of the netlist, but it's one of the critical elements, and it's one of the steps that John Donne will take you through, what he calls netlisting.
+
+54
+00:04:15,380 --> 00:04:21,480
+ So in this particular case, what I see, a very simple circuit with a, you know, battery, resistor, and an LED.
+
+55
+00:04:22,240 --> 00:04:25,320
+ If I look carefully at this, this circuit has three nodes, right?
+
+56
+00:04:25,320 --> 00:04:26,640
+ It's got a ground node.
+
+57
+00:04:27,240 --> 00:04:29,420
+ It's got a node here between that battery.
+
+58
+00:04:29,420 --> 00:04:32,760
+ It's got a battery in the resistor, and it's got a node between the resistor and the LED.
+
+59
+00:04:33,800 --> 00:04:36,660
+ So what I see is this guy defines three nets.
+
+60
+00:04:37,280 --> 00:04:44,620
+ And you'll see in your designs these net names will appear on the wires that run around through the circuit.
+
+61
+00:04:45,160 --> 00:04:48,100
+ Okay, so you'll see these – you'll see names like this.
+
+62
+00:04:48,720 --> 00:04:51,780
+ What you have then is a net connections table down here.
+
+63
+00:04:51,980 --> 00:04:53,680
+ Again, I'm not going to go through the structure of this.
+
+64
+00:04:53,680 --> 00:04:59,000
+ But basically what this does is it describes how individual components in the circuit,
+
+65
+00:04:59,400 --> 00:05:02,140
+ are connected via these nodes, all right?
+
+66
+00:05:02,140 --> 00:05:11,220
+ So this is one of the last critical steps we do as we go from the schematic capture into the actual PCB design layout.
+
+67
+00:05:12,620 --> 00:05:13,120
+ All right.
+
+68
+00:05:13,120 --> 00:05:19,580
+ So when we get to the PCB itself, the printed circuit board, just to introduce some basic concepts, right?
+
+69
+00:05:19,580 --> 00:05:24,740
+ So the board itself is made up of a couple of different layers.
+
+70
+00:05:25,060 --> 00:05:27,840
+ What I'm showing here is a basic two-layer board.
+
+71
+00:05:28,340 --> 00:05:29,380
+ The critical layer.
+
+72
+00:05:29,380 --> 00:05:31,560
+ The two layers you have are the copper layers.
+
+73
+00:05:32,080 --> 00:05:37,420
+ These are where the traces are that actually are the wires within the circuit, right?
+
+74
+00:05:37,460 --> 00:05:40,140
+ That are connecting the different components in the circuit.
+
+75
+00:05:41,040 --> 00:05:44,800
+ In this two-layer board, then I have another one here on the bottom layer.
+
+76
+00:05:45,300 --> 00:05:47,700
+ So we'll refer to this as the top copper layer.
+
+77
+00:05:47,960 --> 00:05:49,520
+ Very often we just say the top layer.
+
+78
+00:05:49,980 --> 00:05:52,820
+ And then the bottom copper layer, or just the bottom layer.
+
+79
+00:05:53,520 --> 00:05:57,380
+ Between those is a dielectric material, which is essentially fiberglass.
+
+80
+00:05:57,380 --> 00:05:58,140
+ Fiberglass.
+
+81
+00:05:58,260 --> 00:05:59,360
+ Sometimes called the –
+
+82
+00:05:59,360 --> 00:05:59,920
+ Substrate.
+
+83
+00:06:00,500 --> 00:06:05,380
+ That material is referred to, that fiberglass material is referred to as FR4.
+
+84
+00:06:06,080 --> 00:06:16,400
+ And FR4 is, as I said, a particular type of fiberglass, has a particular dielectric set of dielectric properties and such that can be looked up.
+
+85
+00:06:17,040 --> 00:06:26,100
+ So typically, if you look at a basic board, what you have is copper on the top and on the bottom of one of those pieces of FR4 substrate.
+
+86
+00:06:29,340 --> 00:06:37,220
+ On – in addition, what most boards also have is this sort of layer on top of that copper.
+
+87
+00:06:37,860 --> 00:06:41,920
+ It's on top, both on the bottom and on the top, called solder mask.
+
+88
+00:06:42,300 --> 00:06:43,580
+ We'll take a look at that in a second.
+
+89
+00:06:43,580 --> 00:06:49,480
+ But what solder mask is, is basically a layer of insulation that sits on top of the copper so that things won't touch each other.
+
+90
+00:06:50,140 --> 00:06:53,900
+ And then very often what you do is you have a layer of silkscreen on top.
+
+91
+00:06:54,220 --> 00:06:58,740
+ The silkscreen is basically text that allows us to identify what the components are.
+
+92
+00:06:59,340 --> 00:07:14,160
+ So just as a basic example of – of what – what we might have, let's say if we had a multi-layer board, which is eventually what you guys will get to, is you basically have a sandwich of these individual boards like this.
+
+93
+00:07:14,500 --> 00:07:20,420
+ So what I have here is I have copper and then some FR4, and then I have a layer of copper.
+
+94
+00:07:20,600 --> 00:07:25,540
+ And then I have another one down here with copper, FR4, and copper.
+
+95
+00:07:25,720 --> 00:07:29,320
+ And in between those, I have a material called prepreg, which is a –
+
+96
+00:07:29,460 --> 00:07:34,960
+ a cheaper material, which – which helps the individual elements to adhere, all right?
+
+97
+00:07:34,960 --> 00:07:37,540
+ So this – in this particular case, I have a four-layer board.
+
+98
+00:07:37,940 --> 00:07:48,360
+ And we'll see, you know, that's pretty common and most likely what most of you will ultimately develop when you get into Lab 3, where you need to use more than two layers.
+
+99
+00:07:49,000 --> 00:07:58,940
+ Just so you have an idea, if you're looking at a motherboard in a computer or something of that level of complexity, you might have something upwards of, say, 16 layers, and it might be a pretty
+
+100
+00:07:59,300 --> 00:08:00,840
+ sophisticated design.
+
+101
+00:08:00,840 --> 00:08:04,980
+ Most designs, you know, are somewhere between two and six layers.
+
+102
+00:08:06,720 --> 00:08:08,860
+ All right, now I used a couple of terms there.
+
+103
+00:08:08,860 --> 00:08:15,160
+ I wanted to just kind of show these things. Some of you – or hopefully all of you – have seen a PCB at some point.
+
+104
+00:08:15,980 --> 00:08:21,880
+ The solder mask here is that green layer of material. And if I look carefully at the board,
+
+105
+00:08:22,540 --> 00:08:27,640
+ what I can see, these things here are called pads, all right?
+
+106
+00:08:27,640 --> 00:08:29,280
+ Whenever I have exposed copper,
+
+107
+00:08:29,280 --> 00:08:31,580
+ like this, it has that silvery look.
+
+108
+00:08:31,900 --> 00:08:38,320
+ That's a pad, and that's something to which I can solder. And so in this particular case, I've got two types of pads.
+
+109
+00:08:38,320 --> 00:08:43,260
+ I have these sort of annular rings, which are around what I call a plated through-hole.
+
+110
+00:08:43,440 --> 00:08:49,380
+ So a hole that's been drilled through the board and is plated with copper all the way through the board.
+
+111
+00:08:49,540 --> 00:08:54,600
+ Those are the sorts of things that we typically solder to. Now, there's another type of
+
+112
+00:08:56,560 --> 00:08:59,260
+ through-hole that we don't solder to, and
+
+113
+00:08:59,300 --> 00:09:01,260
+ that's called a via, all right?
+
+114
+00:09:01,260 --> 00:09:03,260
+ And that's one of – this is a via right here.
+
+115
+00:09:03,800 --> 00:09:08,580
+ What that via is doing is it's connecting one layer to another.
+
+116
+00:09:08,580 --> 00:09:11,280
+ So it's connecting a wire on one layer to another layer.
+
+117
+00:09:11,280 --> 00:09:18,900
+ If I look carefully at this board, what I can see is I have these sort of, I don't know, lighter green areas,
+
+118
+00:09:18,900 --> 00:09:24,180
+ I guess, and then these kind of darker green areas. Where I have these lighter areas,
+
+119
+00:09:24,500 --> 00:09:29,240
+ that's basically where there's copper sitting on top of that FR4 substrate.
+
+120
+00:09:29,240 --> 00:09:33,660
+ So here I can see I've got a big copper area, right?
+
+121
+00:09:33,660 --> 00:09:39,680
+ This is what is sometimes called a copper pour, where copper is effectively in a large plane.
+
+122
+00:09:40,320 --> 00:09:44,980
+ All right, so we'll use that terminology, a copper pour. These other sort of skinnier
+
+123
+00:09:46,380 --> 00:09:48,740
+ areas right here, these are copper traces.
+
+124
+00:09:49,360 --> 00:09:55,460
+ Essentially what's been done is the silkscreen has been sat on top of the top layer,
+
+125
+00:09:55,460 --> 00:09:59,120
+ and so wherever it crosses over copper, you get this sort of
+
+126
+00:09:59,120 --> 00:10:04,900
+ lighter color. These darker areas, basically, that's just open board, all right?
+
+127
+00:10:04,900 --> 00:10:15,060
+ That's basically just the solder mask sitting on top of just blank substrate, the FR4 substrate.
+
+128
+00:10:15,060 --> 00:10:22,100
+ So a couple of things here. So I said these are plated through-holes, these plated through-holes
+
+129
+00:10:22,100 --> 00:10:29,100
+ right here with these big annular rings around them you can solder to, those are for what we call through-hole
+
+130
+00:10:29,100 --> 00:10:33,660
+ components. I also have pads that are sitting right here. These pads are for
+
+131
+00:10:33,660 --> 00:10:37,140
+ what we call surface mount components, right? And we would solder the pins
+
+132
+00:10:37,140 --> 00:10:43,140
+ directly to these pads. So we'll talk more about those. In the first lab, you're
+
+133
+00:10:43,140 --> 00:10:47,760
+ going to deal mostly with surface mount components in your design, although later
+
+134
+00:10:47,760 --> 00:10:50,820
+ on we're going to switch over more to the boards that you're actually going to
+
+135
+00:10:50,820 --> 00:10:58,480
+ manufacture, and in those particular cases, we'll deal with through-hole components.
+
+136
+00:10:58,480 --> 00:11:04,660
+ I did mention here quickly this via. That's something we typically don't solder to. We'll
+
+137
+00:11:04,660 --> 00:11:08,760
+ talk a little bit more about that here in a bit. The other element I should talk about
+
+138
+00:11:08,760 --> 00:11:15,600
+ is the silkscreen. So all of this white, say this white component outline here, or this
+
+139
+00:11:15,600 --> 00:11:20,700
+ white text where it says RX with the plus and the minus, those are what we call silkscreen.
+
+140
+00:11:20,700 --> 00:11:24,360
+ And that's often a critical thing to allow us to know what components we're actually
+
+141
+00:11:24,360 --> 00:11:32,260
+ looking at when we're looking at the board. Now just to understand, so this is a six-layer
+
+142
+00:11:32,260 --> 00:11:38,260
+ board, so this is a pretty complicated one. But just to see it in stack up, what I have
+
+143
+00:11:38,260 --> 00:11:46,260
+ is basically, so one, two, three of those FR4 layers, right, where I've got copper
+
+144
+00:11:46,260 --> 00:11:50,580
+ on both sides. So here's layers one and two, three and four.
+
+145
+00:11:50,580 --> 00:11:59,200
+ Five and six. And what I have is holes that run through the board, okay? So I've got two
+
+146
+00:11:59,200 --> 00:12:03,620
+ holes that are running through the board, and then I can see some copper traces up on
+
+147
+00:12:03,620 --> 00:12:09,220
+ top. And it looks like in here, I've got a pretty big layer of copper. That's pretty
+
+148
+00:12:09,220 --> 00:12:13,900
+ common on our inner planes. So in this particular case, in this example, it's calling that a
+
+149
+00:12:13,900 --> 00:12:20,460
+ ground plane. And then down here, where it's also pretty big, we see that it's called a
+
+150
+00:12:20,460 --> 00:12:26,340
+ VCC plane. So we'll talk later in more detail about power distribution. But that's a pretty
+
+151
+00:12:26,340 --> 00:12:30,260
+ common thing to do, to have a lot of ground plane and a lot of power plane. And then in
+
+152
+00:12:30,260 --> 00:12:36,540
+ addition to that, I sort of have my signal traces on the other ones.
+
+153
+00:12:36,540 --> 00:12:42,900
+ I mentioned vias. Vias basically are when nets have to cross. So whenever I have to
+
+154
+00:12:42,900 --> 00:12:50,340
+ cross from one node over another one, what I have to do is I have to take one of those
+
+155
+00:12:50,340 --> 00:12:55,880
+ and I have to change copper layers. When we do that, we make use of a via. So here's kind
+
+156
+00:12:55,880 --> 00:13:01,960
+ of a simple example. What I have going on is I might have a trace on top, a wire or
+
+157
+00:13:01,960 --> 00:13:09,720
+ trace that then goes through a plated through hole, and then to the wire that it's going
+
+158
+00:13:09,720 --> 00:13:15,100
+ to go to on the layer beneath it, all right? That is a pretty common thing to do. We try
+
+159
+00:13:15,100 --> 00:13:20,220
+ to avoid it as much as possible through careful layout. But if we need to do it, we need to
+
+160
+00:13:20,220 --> 00:13:24,840
+ do it, all right? All boards have these things. We just do our best to try to avoid them as
+
+161
+00:13:24,840 --> 00:13:31,800
+ much as possible through careful layout and routing, okay? So one thing about these guys
+
+162
+00:13:31,800 --> 00:13:36,580
+ is they, although they do have a ring around them, that ring is usually much smaller since
+
+163
+00:13:36,580 --> 00:13:43,820
+ we don't need to be soldering to those particular components. Now, when you're done the final
+
+164
+00:13:43,820 --> 00:13:50,100
+ process, and that's not talked about in the initial video, what you'll ultimately generate
+
+165
+00:13:50,100 --> 00:13:57,860
+ is a set of artwork. Those artwork files are called Gerber files. These dot art files are
+
+166
+00:13:57,860 --> 00:14:03,340
+ called Gerber files. What they do is they basically provide to the board manufacturer
+
+167
+00:14:03,340 --> 00:14:10,480
+ some indication as to how they should be laying out the copper and how they should be drilling
+
+168
+00:14:10,480 --> 00:14:19,980
+ the boards. So if you look at this, what you have is, so it says top and bottom. So these
+
+169
+00:14:19,980 --> 00:14:24,820
+ are the top and bottom copper layers, and then you've got a silkscreen on top, the solder
+
+170
+00:14:24,820 --> 00:14:34,820
+ mask, the bottom piece here, and then some other elements that we'll talk about later.
+
+171
+00:14:34,820 --> 00:14:39,660
+ In addition, what you have is a drill file, which basically tells the manufacturer where
+
+172
+00:14:39,660 --> 00:14:48,420
+ to drill holes in the XY plane, and also tells them how big those holes need to be, okay?
+
+173
+00:14:48,420 --> 00:14:49,860
+ So we'll talk more about how we can identify holes.
+
+174
+00:14:49,860 --> 00:14:53,000
+ We'll talk more about how we can identify those sorts of things later. These files
+
+175
+00:14:53,000 --> 00:14:59,680
+ ultimately are the ones or part of what gets submitted to the manufacturer and are reviewed
+
+176
+00:14:59,680 --> 00:15:05,000
+ when we go through something called the DRC or design rule check. So we'll talk about
+
+177
+00:15:05,000 --> 00:15:10,960
+ that in more detail later on. Now, when you're actually going through the design process,
+
+178
+00:15:10,960 --> 00:15:16,380
+ we'll talk some more about this later, there are certain standards that one uses, and a
+
+179
+00:15:16,380 --> 00:15:19,740
+ common standard is IPC-2221.
+
+180
+00:15:19,740 --> 00:15:26,140
+ The Generic Standard for Printed Circuit Board Design. This, as you can see, comes from this
+
+181
+00:15:26,140 --> 00:15:31,860
+ Institute for Interconnecting and Packaging of Electronic Circuits, IPC. There's other
+
+182
+00:15:31,860 --> 00:15:36,280
+ flavors of this, but the critical elements that it outlines for us are some things that
+
+183
+00:15:36,280 --> 00:15:39,800
+ we need to know when we're designing boards.
+
+184
+00:15:39,800 --> 00:15:49,620
+ So just as an example of what I'm kind of referring to, you know, from taking a look
+
+185
+00:15:49,620 --> 00:15:53,080
+ at, let's say you're making fields, right? You know that, okay, if there's a voltage
+
+186
+00:15:53,080 --> 00:15:58,280
+ on this line, let's say for sake of argument that this wire right here is at 100 volts,
+
+187
+00:15:58,280 --> 00:16:03,180
+ and well, I guess in this particular case, this guy is actually grounded. I see that
+
+188
+00:16:03,180 --> 00:16:09,520
+ this is connected to the ground layer, alright? So because this is ground layer and it's connected
+
+189
+00:16:09,520 --> 00:16:16,240
+ physically to this plated through hole and then to this line, this is a grounded line.
+
+190
+00:16:16,240 --> 00:16:19,500
+ Let's say this guy right here was at 100 volts, alright?
+
+191
+00:16:19,500 --> 00:16:25,060
+ So if there's 100 volts here and there's ground here, there's an electric field between those
+
+192
+00:16:25,060 --> 00:16:31,600
+ two things. There is a possibility when I have an electric field over some distance
+
+193
+00:16:31,600 --> 00:16:36,620
+ like this that I can have a phenomenon called dielectric breakdown, right? Where I can actually
+
+194
+00:16:36,620 --> 00:16:42,980
+ get some jump, some electrons to jump from one side to the other, right? We want to avoid
+
+195
+00:16:42,980 --> 00:16:47,840
+ that. And so one of the critical things that we have is standards about what the distance
+
+196
+00:16:47,840 --> 00:16:49,380
+ between lines should be.
+
+197
+00:16:49,380 --> 00:16:54,620
+ And that distance is largely generated by, controlled by voltage because we're trying
+
+198
+00:16:54,620 --> 00:16:59,660
+ to prevent that dielectric breakdown that you talked about in fields.
+
+199
+00:16:59,660 --> 00:17:06,440
+ So one of the things that's in that design standard is it gives us things like, okay,
+
+200
+00:17:06,440 --> 00:17:14,980
+ well, if the voltage between conductors is between zero and 15 volts, and depending on
+
+201
+00:17:14,980 --> 00:17:19,260
+ where it is, whether it's on internal conductors or whether it's on the external side, so there's
+
+202
+00:17:19,260 --> 00:17:25,460
+ internal layers or external layers, there's different widths that I need to maintain.
+
+203
+00:17:25,460 --> 00:17:29,500
+ Notice that as the voltages go up, the distances go up.
+
+204
+00:17:29,500 --> 00:17:35,940
+ Now notice in this particular case, these units are in millimeters. You'll see a mix
+
+205
+00:17:35,940 --> 00:17:42,320
+ and match of units when you do PCB design. Very often you see millimeters, but the other
+
+206
+00:17:42,320 --> 00:17:47,140
+ unit that you often see is something called mils, which is thousandths of an inch, right?
+
+207
+00:17:47,140 --> 00:17:49,140
+ We'll look at that in a little bit.
+
+208
+00:17:49,140 --> 00:17:55,640
+ So, you know, this, as I said, this standard lays out, you know, some basic guidelines.
+
+209
+00:17:55,640 --> 00:18:00,500
+ One of them being, how do I space conductors to prevent that dielectric breakdown?
+
+210
+00:18:00,500 --> 00:18:06,120
+ The other really critical thing that we often worry about is what size are the traces?
+
+211
+00:18:06,120 --> 00:18:11,280
+ So if I look back to, you know, these traces right here, well, how does one decide what,
+
+212
+00:18:11,280 --> 00:18:14,020
+ what width those traces need to be?
+
+213
+00:18:14,020 --> 00:18:19,020
+ Well, the width of traces is basically set by the current. So if I have a lot of current,
+
+214
+00:18:19,020 --> 00:18:26,620
+ a lot of current going through these things, then my concern would be how much voltage
+
+215
+00:18:26,620 --> 00:18:32,660
+ is being lost as that current goes through that resistance of this trace, and then ultimately
+
+216
+00:18:32,660 --> 00:18:37,020
+ how much power is lost as that current traverses through this trace.
+
+217
+00:18:37,020 --> 00:18:40,960
+ So what I want to do is I want to minimize the resistance, but the question is how do
+
+218
+00:18:40,960 --> 00:18:47,520
+ I, you know, ultimately how small do I make that resistance? Well, resistance is kind
+
+219
+00:18:47,520 --> 00:18:48,900
+ of a tricky thing.
+
+220
+00:18:48,900 --> 00:18:50,920
+ What I want to think about is temperature rise.
+
+221
+00:18:50,920 --> 00:18:54,220
+ I know that if I have a lot of current running through these traces, that I'm going to be
+
+222
+00:18:54,220 --> 00:18:58,500
+ dissipating power, and if I'm dissipating power, that means the temperature is going
+
+223
+00:18:58,500 --> 00:18:59,900
+ to rise.
+
+224
+00:18:59,900 --> 00:19:05,040
+ So one thing that is included in here is a set of graphs and ultimately a set of equations
+
+225
+00:19:05,040 --> 00:19:11,460
+ that allow us to determine how to size our traces on the basis of what temperature rise
+
+226
+00:19:11,460 --> 00:19:15,140
+ we want to have for a given current, all right?
+
+227
+00:19:15,140 --> 00:19:18,780
+ So as an example of that, one simple way to do this.
+
+228
+00:19:18,780 --> 00:19:24,360
+ A company that we'll make use of eventually, Advanced Circuits, basically has this thing
+
+229
+00:19:24,360 --> 00:19:34,280
+ called a trace width calculator, which is taken from this IPCC-221, IPC-221, right?
+
+230
+00:19:34,280 --> 00:19:37,860
+ So what I see here is I can input a particular current.
+
+231
+00:19:37,860 --> 00:19:43,760
+ So I put in, in this case, let's say I have 0.1 amps going through a particular trace,
+
+232
+00:19:43,760 --> 00:19:48,660
+ and I, in this particular case, I'm saying, let's say the ambient temperature is 25 degrees C.
+
+233
+00:19:48,660 --> 00:19:54,740
+ The trace is one inch long, and I only want a one-degree temperature rise, so that means
+
+234
+00:19:54,740 --> 00:19:59,340
+ I only want the temperature to rise one degree above the ambient.
+
+235
+00:19:59,340 --> 00:20:04,220
+ Well, what that tells me in this particular case, if I'm on an internal layer, I need
+
+236
+00:20:04,220 --> 00:20:09,700
+ something that's 2.6 mils, I said mils were a thousandth of an inch, so I need a trace
+
+237
+00:20:09,700 --> 00:20:17,540
+ that's 2.6 mils wide, tells me how much, how many ohms I have associated with that, and
+
+238
+00:20:17,540 --> 00:20:18,540
+ if I have an external layer, I need to have an external layer.
+
+239
+00:20:18,540 --> 00:20:24,180
+ So if I have an internal trace, I see that it has a width of 0.99.
+
+240
+00:20:24,180 --> 00:20:33,260
+ Now notice that the internal layers basically give us wider traces for the same temperature
+
+241
+00:20:33,260 --> 00:20:34,740
+ rise.
+
+242
+00:20:34,740 --> 00:20:39,040
+ Notice as well, if I look at that, that the resistance of this guy is lower.
+
+243
+00:20:39,040 --> 00:20:44,960
+ We would sort of expect that something, a wider wire, right, a wider trace would give
+
+244
+00:20:44,960 --> 00:20:46,420
+ us a lower resistance.
+
+245
+00:20:46,420 --> 00:20:48,420
+ Now, if you notice on the top.
+
+246
+00:20:48,420 --> 00:20:52,660
+ It's a skinny guy, and he has a higher resistance.
+
+247
+00:20:52,660 --> 00:20:58,060
+ Well, notice the critical thing that we set here, the critical specs that we give as inputs
+
+248
+00:20:58,060 --> 00:21:01,900
+ is how much of a temperature rise do I want to have?
+
+249
+00:21:01,900 --> 00:21:08,660
+ So on the external pieces of the board, I have air that's able to move over the board,
+
+250
+00:21:08,660 --> 00:21:13,840
+ and so that resistance and ultimately that power drop doesn't matter as much because
+
+251
+00:21:13,840 --> 00:21:18,300
+ the air is able to move over the top of the board and carry the heat away.
+
+252
+00:21:18,300 --> 00:21:21,900
+ Notice I have a slightly different problem on the internal layers of the board, right?
+
+253
+00:21:21,900 --> 00:21:26,860
+ On the internal layers, effectively, that heat is very hard to get out of there, and
+
+254
+00:21:26,860 --> 00:21:34,960
+ so I need a thicker trace, a wider trace, to be able to have the same amount of temperature
+
+255
+00:21:34,960 --> 00:21:35,960
+ rise.
+
+256
+00:21:35,960 --> 00:21:40,640
+ All right, so notice the critical things that you tell this are how much current and how
+
+257
+00:21:40,640 --> 00:21:43,440
+ much temperature rise you want to have.
+
+258
+00:21:43,440 --> 00:21:48,180
+ The other piece is this thing called thickness of copper.
+
+259
+00:21:48,180 --> 00:21:53,100
+ And notice what it actually says here, it says two ounce per square foot.
+
+260
+00:21:53,100 --> 00:21:57,900
+ Typically in the industry, we refer to this as two ounce copper.
+
+261
+00:21:57,900 --> 00:22:02,060
+ Copper weights, we talk about these terms, so basically how thick is the copper?
+
+262
+00:22:02,060 --> 00:22:06,240
+ In other words, how thick is it in the Z direction?
+
+263
+00:22:06,240 --> 00:22:11,800
+ So how thick is it off the board surface?
+
+264
+00:22:11,800 --> 00:22:17,940
+ What we see here is, you know, so that ounce idea, you can take a look at this, but basically,
+
+265
+00:22:17,940 --> 00:22:26,200
+ if I have two ounce copper, that's basically what it says is in one square foot, I've poured
+
+266
+00:22:26,200 --> 00:22:28,960
+ as much copper that it weighs two ounces.
+
+267
+00:22:28,960 --> 00:22:34,540
+ If I do that, then that copper is about 2.8 mils thick, okay?
+
+268
+00:22:34,540 --> 00:22:38,740
+ So one ounce and two ounce copper are sort of the standard values that we utilize.
+
+269
+00:22:38,740 --> 00:22:42,820
+ When we're doing a lot of power work, we often refer to the two ounce copper where it's going
+
+270
+00:22:42,820 --> 00:22:43,960
+ to be thicker.
+
+271
+00:22:43,960 --> 00:22:47,820
+ The thicker the copper gets, obviously, the lower the resistance is going to be.
+
+272
+00:22:47,820 --> 00:22:52,320
+ All right, so just introducing some basic concepts.
+
+273
+00:22:52,320 --> 00:22:59,980
+ Now, Chon Don in the video introduces concepts around line widths and via sizes, and he basically
+
+274
+00:22:59,980 --> 00:23:03,980
+ goes in and he sets minimum values for those things.
+
+275
+00:23:03,980 --> 00:23:08,820
+ The minimum value that he sets is 20 mils for the line widths, which basically means
+
+276
+00:23:08,820 --> 00:23:16,500
+ minimum of 20 mil traces, so what that means when I have 20 mil traces is that those traces
+
+277
+00:23:16,500 --> 00:23:17,700
+ are 20 mils wide.
+
+278
+00:23:17,700 --> 00:23:25,560
+ So here I had one that was 2.6, so effectively, Chon Don is setting it to be about 10 times
+
+279
+00:23:25,560 --> 00:23:26,560
+ that.
+
+280
+00:23:26,560 --> 00:23:32,640
+ His circuit is a power circuit, and typically, if it's a power circuit, then we know the
+
+281
+00:23:32,640 --> 00:23:36,540
+ currents are going to be higher, and typically, they're going to be thicker traces.
+
+282
+00:23:36,540 --> 00:23:42,080
+ So how we set these things in here ultimately gets decided by going through calculations
+
+283
+00:23:42,080 --> 00:23:47,580
+ like this, which are laid out in industry standards, okay?
+
+284
+00:23:47,580 --> 00:23:51,560
+ There's a lot for you guys to learn and to go through as we go through the semester,
+
+285
+00:23:51,560 --> 00:23:55,740
+ but those are some key basic concepts.
+
+286
+00:23:55,740 --> 00:24:01,680
+ The other thing that you'll see Chon Don talk a little bit about is how we ultimately choose
+
+287
+00:24:01,680 --> 00:24:02,680
+ our packages.
+
+288
+00:24:02,680 --> 00:24:05,220
+ So you guys lay out a circuit.
+
+289
+00:24:05,220 --> 00:24:10,580
+ You capture a schematic and say, "Okay, well, here's the circuit schematic," and, for instance,
+
+290
+00:24:10,580 --> 00:24:13,440
+ you may utilize an op-amp that's an LM324.
+
+291
+00:24:13,440 --> 00:24:16,380
+ And I see that that LM324 has...
+
+292
+00:24:16,380 --> 00:24:17,460
+ It works.
+
+293
+00:24:17,460 --> 00:24:20,780
+ It would appear four different package types.
+
+294
+00:24:20,780 --> 00:24:28,700
+ It has these two DIP chips, so DIP means dual inline packages, right, and has two basic
+
+295
+00:24:28,700 --> 00:24:33,840
+ surface mount components, one of which, this TSSOP package is smaller.
+
+296
+00:24:33,840 --> 00:24:41,460
+ These things here, CDIP, PDIP, SOIC, TSSOP, these are industry standard footprints for
+
+297
+00:24:41,460 --> 00:24:47,340
+ packages, so typically, in the data sheet, what I find if I go later into the
+
+298
+00:24:47,340 --> 00:24:55,740
+ data sheet, here I have mechanical information that tells me about the footprint of the device,
+
+299
+00:24:55,740 --> 00:24:56,740
+ right?
+
+300
+00:24:56,740 --> 00:24:58,500
+ We'll need this information.
+
+301
+00:24:58,500 --> 00:25:04,840
+ We'll be looking at this information to make sure that we align and have our holes.
+
+302
+00:25:04,840 --> 00:25:09,580
+ So in this case, this would be a through-hole component where I want to have, you know,
+
+303
+00:25:09,580 --> 00:25:14,260
+ these pins going through the board, I need to make sure that holes are placed in the
+
+304
+00:25:14,260 --> 00:25:17,220
+ right spots and that the path...
+
+305
+00:25:17,220 --> 00:25:22,780
+ The paths that are placed around those holes are of the right width, right?
+
+306
+00:25:22,780 --> 00:25:27,020
+ So I need to have this information about the footprint of the component to make sure that
+
+307
+00:25:27,020 --> 00:25:28,780
+ the board itself is set up properly.
+
+308
+00:25:28,780 --> 00:25:35,140
+ All right, so there's a lot to learn, but some key terminology is kind of introduced
+
+309
+00:25:35,140 --> 00:25:39,820
+ here, and when you go through that video that Sean Don has, you should get a pretty good
+
+310
+00:25:39,820 --> 00:25:47,100
+ sense of how to use the specific tool that we'll be using, ORCAD, to be able to go through
+
+311
+00:25:47,100 --> 00:25:48,100
+ this...
+
+312
+00:25:48,100 --> 00:25:53,820
+ This process.
+
