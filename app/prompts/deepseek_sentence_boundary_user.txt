@@ -1,9 +1,0 @@
-Find sentence boundaries. Return JSON.
-
-Range: {{ allowed_start_word_id }}-{{ allowed_end_word_id }}
-Context: {{ previous_context_summary }}
-
-Tokens:
-{{ tokens_json }}
-
-Output: {"boundaries": [{"after_word_id": N, "confidence": 0.9}], "window_status": "complete"}
